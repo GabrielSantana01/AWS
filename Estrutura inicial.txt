@@ -11,3 +11,14 @@ essa parte de estudo sobre a AWS vai servir somente para quardar informações d
 
 WSL -> é como um conteiner de linux dentro do windows. porem o proprio windows que gerencia ele.
 para instalar o WSL precisamos acessa o POWERSHELL como ADMINISTRADOR e digitar: wsl -- install
+
+é possivel instalar varias distros de qualquer linux no windows, é so digitar wsl --install -d nome_da_distru
+para listar a distros disponiveis digite: wsl --list --online ou wsl -l -o
+para verificar a versão e o status das distros: wsl --list --verbose
+para definir a distro padrao: wsl --set-default nome_da_distro
+para atualizar a wsl: dentro do windows terminal digite: wsl --update
+verificar o status: wsl --status
+menu de ajuda: wsl --help
+remover distro: wsl --unregister nome_da_distro
+
+para acessar nosso conteiner linux pelo vscode vamos usar uma extensão do vscode o Remote wls, que vai ser responsavel por comunicar o vscode com o linux.
