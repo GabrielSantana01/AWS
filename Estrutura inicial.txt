@@ -1,0 +1,13 @@
+# AWS (amazon web services)
+
+terei uma maquina na aws. onde vou fazer deploy do programa usando o terraform, e atualização de codigo usando ansible
+essa maquina rodara linux, e toda a estrutura de aprendizado sera compartilhada no gitlab. tambem irei versionar todas as alterações inportante pelo git.
+
+para isso usarei o vscode como ide para criar todas a estrutura. como tenho windows usarei tb o wsl(windows subsystem for linux).
+como tudo roda melhor pelo linux é inevitavel não usa-lo. entao apesar de esta no windows toda estrutura vai funciona como se tudo fosse linux. alem de usar o wsl na minha maquina fisica, a minha maquina na nuvem tambem vai ser linux.
+
+essa parte de estudo sobre a AWS vai servir somente para quardar informações de estruturas e soluções para os problemas encontrado nas implantações dos projetos.
+
+
+WSL -> é como um conteiner de linux dentro do windows. porem o proprio windows que gerencia ele.
+para instalar o WSL precisamos acessa o POWERSHELL como ADMINISTRADOR e digitar: wsl -- install
