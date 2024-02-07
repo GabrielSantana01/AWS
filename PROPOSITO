@@ -19,3 +19,14 @@ User Name: ec2-user (ou o nome de usuário que você configurou, se diferente)
 Private Key Path: C:\Users\SeuUsuario\Documents\chave.pem (o caminho para a chave privada em seu sistema local)
 
 tive que pegar o arquivo convertido no putty copiar esse arquivo e colar ele em um bloco de notas. salvar como .pem e em tipos de arquivo colocar todos os arquivos.
+
+a propria AWS ja te possibilita acessar a instancia apos a sua criação. o codigo indicado para acesso é: ssh -i "chavePem.pem" ec2-user@ec2-3-138-108-240.us-east-2.compute.amazonaws.com
+para conseguir acessar o arquivo pem acima, tive que dar ls no wsl ate ficar no diretorio onde esta o arquivo.
+chmod 600 chavePem.pem -- esse comando é para restringir as permissoes do ssh(Secure Shell) 
+
+OBS: SSH:  Ele é um protocolo de rede criptografado que permite a comunicação segura entre dois sistemas. 
+O SSH é comumente usado para acessar remotamente servidores e dispositivos, permitindo a execução de comandos, 
+transferência de arquivos e outras operações de rede de forma segura.
+COM ISSO BYPASS TODO O TREINAMENTO DA ALURA PRA SE CONECTAR COM UMA MAQUINA AWS, la eles ensinam a instalar um software chamado
+putty, que ate converte o arquivo e etc, porem por shell a conexao é direta, claro que teve-se instalar extensões no vscode para ssh-remote
+o linux ja tem processo que de suporte ao ssh ja nativo. 
