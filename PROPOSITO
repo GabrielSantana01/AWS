@@ -1,2 +1,21 @@
 Nesse projeto inicial irei criar uma estrutura completa de um projeto que big data, que utilize todas as ferramentas do mercado para extrair tratar os dados e criar uma historia desses dados por um relatorio 
 com varios dashs. pensei primeiramente de realizar uma integração com o power bi. lembrando que esses dashs devem ter ML para agregar maior valor no projeto.
+
+criar uma maquina na amazon é bem simples. nessa interação criei uma maquina EC2 (Elastic Compute Cloud) que nada mais é criar uma VM
+existe algumas configurações padroes na criação dessa instancia, e uma que chamou atenção é o par de chaves. nisso é gerado um arquivo 
+que temos que fazer download esse arquivo nos permitirá acessar nossa VM atraves da nossa maquina local.
+
+PuTTY é um terminal de simulação open source desenvolvido para atuar como um cliente de conexões seguras em protocolos raw TCP,
+Telnet, rlogin e porta serial, ideal para estabelecer conexões seguras de acesso remoto a servidores via Shell Seguro - SSH - 
+e à construção de canais encriptografados entre servidores.
+
+Nome do Host (ou endereço IP): Você pode usar o endereço IP público da sua instância EC2 ou o DNS público associado a ela. Por exemplo, se o endereço IP público da sua instância EC2 for 54.123.456.789, você colocaria isso como o nome do host. Se você estiver usando um DNS, seria algo como ec2-54-123-456-789.compute-1.amazonaws.com.
+Nome de Usuário: O nome de usuário padrão para as instâncias EC2 da AWS é geralmente ec2-user, a menos que você tenha configurado de outra forma.
+Caminho para a Chave Privada (.pem): Este é o caminho local para o arquivo da chave privada (.pem) que você usará para autenticar a conexão SSH. Por exemplo, se o arquivo estiver em C:\Users\SeuUsuario\Documents\chave.pem, você colocaria esse caminho.
+Então, um exemplo de como você preencheria as informações:
+
+Host Name: 54.123.456.789 (ou o DNS público da sua instância)
+User Name: ec2-user (ou o nome de usuário que você configurou, se diferente)
+Private Key Path: C:\Users\SeuUsuario\Documents\chave.pem (o caminho para a chave privada em seu sistema local)
+
+tive que pegar o arquivo convertido no putty copiar esse arquivo e colar ele em um bloco de notas. salvar como .pem e em tipos de arquivo colocar todos os arquivos.
